@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    background-image: url(/OpenFolder/image/Background.jpg);
+    background-size: cover;
+}
+
+/* https://blog.logrocket.com/guide-styling-css-scrollbars/ */
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rebeccapurple;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #1a022e;
+}
+
+/* NAVIGATIE */
+li,
+a,
+input {
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+
+#activePage {
+    font-size: 20px;
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+}
+
+#nav_name {
+    color: #fff;
+}
+
+/* https://youtu.be/PwWHL3RyQgk?si=DEnqD1nhjlXjOhKd */
+header {
+    font-family: "gill-sans-nova", sans-serif;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+.logo {
+    width: 250px;
+}
+
+.nav_menu li {
+    display: inline-block;
+    margin: 0% 50px;
+}
+
+.nav_menu li a {
+    transition: all 0.3s ease 0.1s;
+}
+
+.nav_menu li a:hover {
+    color: #8300EA;
+}
+
+/* SEARCH INPUT */
+form .group_input input,
+input::placeholder {
+    color: #8300ae;
+}
+
+form .group_input img {
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 8%;
+}
+
+.search_icon {
+    width: 3%;
+}
+
+.btn_search {
+    color: #000;
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0.1s;
+    outline: none;
+}
+
+.btn_search:hover {
+    width: 150px;
+}
+
+/* ABOUT US PAGE --- AIRCRAFT BUTTON */
+.aircrafts {
+    font-size: 20px;
+    padding: 0px 5px;
+    color: #fff;
+    background: #8300ea;
+
+    font-family: "gill-sans-nova-extra-condens", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* ABOUT US PAGE --- SEND BUTTON */
+.btn_send {
+    padding-right: 10px;
+    text-align: right;
+}
+
+button {
+    font-size: 20px;
+    padding: 2px 5px;
+    color: #fff;
+    background: #8300ae;
+    border: 0px;
+    cursor: pointer;
+    transition: background-color 250ms;
+    position: relative;
+    isolation: isolate;
+
+    overflow: hidden;
+
+    font-family: "gill-sans-nova", sans-serif;
+}
+
+/* Read more button */
+button h3 {
+    font-size: 15px;
+}
+
+button>span {
+    position: absolute;
+    z-index: -1;
+    width: 33.333%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0;
+}
+
+button> :first-child {
+    left: 0;
+    top: 0;
+}
+
+button> :last-child {
+    right: 0;
+    top: 0;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    background: #480080;
+    width: 15%;
+    height: 20%;
+    inset: 0;
+    margin: auto;
+    opacity: 0;
+
+    transition: transform 1000ms 200ms, opacity 200ms;
+}
+
+button:active::before {
+    transform: scale(20);
+    opacity: 1;
+
+    transition: transform 1000ms, opacity 500ms;
+}
+
+button:has(:first-child:active)::before {
+    margin-left: 0;
+}
+
+button:has(:last-child:active)::before {
+    margin-right: 0;
+}
+
+button:has(:last-child:active)::before,
+button:has(:first-child:active)::before {
+    transition: transform 500ms, opacity 250ms;
+}
+
+/* IMAGE INFO */
+.aircraftContainer {
+    margin: 0 auto;
+    width: 85%;
+    padding: 0px 20px;
+    overflow: hidden;
+}
+
+.aircraft {
+    padding: 5px;
+    float: left;
+}
+
+.aircraftImage {
+    display: block;
+    width: 245px;
+    height: 150px;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.aircraftName {
+    padding: 5px;
+    background: radial-gradient(#8300ae, #1a022e);
+    text-align: center;
+    color: rgb(0, 0, 0, 0%);
+    -webkit-text-stroke: .3px white;
+    font-size: 20px;
+
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.categorie {
+    text-align: center;
+    color: white;
+}
+
+.aircraftCategories {
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-left: 3px;
+    color: #8300EA;
+    font-size: 10px;
+    display: inline;
+
+    /* TODO: zorg dat het op een lijn blijft  */
+}
+
+/* This is to filter the search input*/
+.filterSearch {
+    display: none;
+}

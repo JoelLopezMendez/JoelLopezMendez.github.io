@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.contact {
+    background: #00258d;
+    width: 60%;
+    padding: 20px 100px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .logofooter {
+    background-color: #8300ae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 100px;
+    margin: auto;
+    display: block; 
+}*/
+
+.nameEmail {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact_name_footer {
+    -webkit-text-fill-color: #8300EA;
+    height: 30px;
+    width: 150px;
+
+    font-size: 20px;
+    text-align: left;
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#textareaFooter {
+    min-width: 307px;
+    max-width: 307px;
+    height: 30px;
+    min-height: 30px;
+    max-height: 60px;
+}
+
+.container {
+    background: #8300ae;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.footerRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footerLinks {
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footerLinks h4 {
+    color: #fff;
+    margin-bottom: 10px;
+    border-bottom: 4px solid #00258d;
+    display: inline-block;
+
+    font-size: 20px;
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 700;
+}
+
+.footerLinks ul li a {
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+}
+
+.footerLinks ul li a:hover {
+    font-size: 18px;
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 700;
+
+    padding-left: 6px;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+}
+
+.comingSoonLinks {
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.comingSoonLinks h4 {
+    color: #fff;
+    margin-bottom: 10px;
+    border-bottom: 4px solid #00258d;
+    display: inline-block;
+
+    font-size: 20px;
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 700;
+}
+
+.comingSoonLinks ul li {
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+}
+
+.socialLink a {
+    color: #fff;
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 0%;
+    transition: all .5s ease;
+}
+
+.socialLink a:hover {
+    background: #00258d;
+}
+
+@media(max-width:720px) {
+    .footerRow {
+        text-align: center;
+    }
+
+    .footerLinks {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .comingSoonLinks {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+
+    .contactRow {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact {
+        display: block;
+        text-align: center;
+    }
+
+    .contact_name_footer {
+        display: flex;
+        width: 80px;
+    }
+
+    #textareaFooter {
+        min-width: 165px;
+        max-width: 165px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+}

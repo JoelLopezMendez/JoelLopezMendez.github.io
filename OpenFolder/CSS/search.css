@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form .group_input {
+    position: relative;
+}
+
+form .group_input input {
+    outline: none;
+}
+
+form .group_input input,
+input::placeholder {
+    color: #8300ae;
+}
+
+form .group_input img {
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 115px;
+}
+
+.search_icon {
+    width: 40px;
+}
+
+.btn_search {
+    color: #000;
+    height: 30px;
+    width: 140px;
+    font-size: 15px;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0.1s;
+    outline: none;
+}
+
+.btn_search:hover {
+    width: 150px;
+}

@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* https://youtu.be/qXRYMdvq_Dc?si=ZTzQqtUUgpJf8MzN */
+.containerContent {
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.card {
+    float: left;
+    width: 245px;
+    height: 60%;
+    padding-left: 10px;
+}
