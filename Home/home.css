@@ -1,0 +1,64 @@
+/* https://cssgradient.io/ */
+header {
+    background: linear-gradient(180deg, rgba(0, 11, 46, 1) 70%, rgba(0, 37, 141, 1) 100%);
+    z-index: 1;
+}
+
+.homeImage {
+    height: 500px;
+}
+
+.welkomImage {
+    object-fit: cover;
+    width: 100%;
+}
+
+.img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.logoDiv {
+    margin: 10px 130px;
+    position: fixed;
+    z-index: 2;
+}
+
+/* IMAGE INFO */
+.aircraftContainer {
+    margin-top: 20px;
+    width: 88%;
+}
+
+.aircraftContainerRow {
+    position: relative;
+    margin-top: 3%;
+    left: 3%;
+    width: 100%;
+}
+
+.aircraftContainerRow2 {
+    position: relative;
+    margin-top: 3%;
+    left: 10%;
+    width: 75%;
+}
+
+.aircraftContainerRow3 {
+    margin-top: 3%;
+    position: relative;
+    left: 25%;
+    width: 50%;
+}
+
+.aircraftContainerRow4 {
+    margin-top: 3%;
+    position: relative;
+    left: 38%;
+    width: 25%;
+}
+
+.card {
+    margin-bottom: 30px;
+}
