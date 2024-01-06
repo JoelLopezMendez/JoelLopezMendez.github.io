@@ -1,0 +1,88 @@
+body {
+    background-image: url(./image/backgroundContact.jpg);
+    background-size: cover;
+}
+
+/* https://cssgradient.io/ */
+header {
+    background: linear-gradient(180deg, rgba(0, 11, 46, 1) 81%, #EB9D00 100%);
+}
+
+/* BOX CONTAINER */
+.containerAbout {
+    position: relative;
+    margin: 1% auto;
+    width: 80%;
+    background: #fff;
+    border: 5px solid #8300EA;
+}
+
+.containerAbout p {
+    padding: 0% 3%;
+    width: 74%;
+
+    font-family: "gill-sans-nova-condensed", sans-serif;
+}
+
+.containerAbout .p {
+    width: 90%;
+}
+
+
+.pBold {
+    font-size: 20px;
+    font-family: "gill-sans-nova-extra-condens", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.name {
+    background: #000;
+    padding-left: 3%;
+    font-size: 50px;
+    -webkit-text-stroke: 2px #8300EA;
+    font-family: "gill-sans-nova-extra-condens", sans-serif;
+}
+
+/* CONTACT BOX */
+.contactAbout {
+    background: #ffffff;
+    position: absolute;
+    border: 3px solid#8300EA;
+    width: 280px;
+    height: 112%;
+    left: 80%;
+    top: 32%;
+}
+
+.contactAbout h1 {
+    font-size: 50px;
+    font-family: "gill-sans-nova-extra-condens", sans-serif;
+    text-align: center;
+}
+
+.contact_name {
+    border: 1px solid #000;
+    -webkit-text-fill-color: #8300EA;
+    height: 30px;
+    width: 90%;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#textarea {
+    min-width: 90%;
+    max-width: 90%;
+    height: 70px;
+    min-height: 30px;
+    max-height: 70px;
+}
+
+.footer {
+    margin-top: 200px;
+}
