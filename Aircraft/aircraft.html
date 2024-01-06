@@ -1,0 +1,162 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aircraft Nation About us</title>
+    <link rel="icon" href="../OpenFolder/image/logoB.ico">
+    <link rel="stylesheet" href="../OpenFolder/CSS/nav.css">
+    <link rel="stylesheet" href="/OpenFolder/CSS/footer.css">
+    <link rel="stylesheet" href="./aircraft.css">
+    <link rel="stylesheet" href="../OpenFolder/CSS/card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script type="module" src="aircraft.js"></script>
+</head>
+
+<body>
+    <div class="background">
+
+        <!-- https://youtu.be/PwWHL3RyQgk?si=DEnqD1nhjlXjOhKd -->
+        <header class="header">
+            <img class="logo" src="../OpenFolder/image/logo.png" alt="logo">
+            <nav>
+                <ul class="nav_menu">
+                    <li><a href="../Home/index.html" id="nav_name">Home</a></li>
+                    <li><a href="javascript:history.back()" id="activePage">Aircraft</a></li>
+                    <li><a href="../AboutUs/aboutUs.html" id="nav_name">About us</a></li>
+                </ul>
+            </nav>
+            <form action="" method="post">
+                <div class="group_input">
+                    <img src="../OpenFolder/image/searchIcon.png" class="search_icon">
+                    <input class="btn_search" type="text" id="search" placeholder="Search" data-searc>
+                </div>
+            </form>
+        </header>
+
+        <div class="containerMain">
+            <div class="ContaineraAircraft">
+                <div class="filter">
+                    <div>
+                        <h1>Filter by</h1>
+                    </div>
+
+                    <div class="categories">
+                        <div class="filterType">
+                            <img src="/OpenFolder/image/filterIconColor.png" class=" filterIcon">
+                            <h2>Categories</h2>
+                        </div>
+                        <div class="categoryList">
+                            <label><input type="radio" name="aircraft" category="all" checked>All</label>
+
+                            <label><input type="radio" name="aircraft" category="Air Force Aircraft">Air force
+                                aircraft</label>
+                            <label><input type="radio" name="aircraft" category="Air Force Fighters">Air force
+                                fighters</label>
+                            <label><input type="radio" name="aircraft" category="Attack Aircraft">Attack
+                                aircraft</label>
+                            <label><input type="radio" name="aircraft" category="Bombers">Bombers</label>
+                            <label><input type="radio" name="aircraft" category="Coast Guard Aircraft">Coast guard
+                                aircraft</label>
+                            <label><input type="radio" name="aircraft" category="Drones">Drones</label>
+                            <label><input type="radio" name="aircraft" category="Fighter Aircraft">Fighter
+                                aircraft</label>
+                            <label><input type="radio" name="aircraft" category="Marine Corps Aircraft">Marine corps
+                                aircraft</label>
+                            <label><input type="radio" name="aircraft" category="Marine Corps Attack Aircraft">Marine
+                                corps attack aircraft</label>
+                            <label><input type="radio" name="aircraft" category="Marine Corps Fighters">Marine corps
+                                fighters</label>
+                            <label><input type="radio" name="aircraft" category="Navy Aircraft">Navy aircraft</label>
+                            <label><input type="radio" name="aircraft" category="Navy Attack Aircraft">Navy attack
+                                aircraft</label>
+                            <label><input type="radio" name="aircraft" category="Navy Fighters">Navy fighters</label>
+                            <label><input type="radio" name="aircraft" category="Special Mission Aircraft">Special
+                                mission aircraft</label>
+                            <label><input type="radio" name="aircraft" category="Surveillance Aircraft">Surveillance
+                                aircraft</label>
+                            <label><input type="radio" name="aircraft" category="Transport Aircraft">Transport
+                                aircraft</label>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="aircraftContainer" class="containerContent"></div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="contact">
+                <img class="logo" src="../OpenFolder/image/logo.png" alt="logo">
+
+                <form action="https://formsubmit.co/joelf.lopezmendez@gmail.com" method="post">
+                    <div class="nameEmail">
+                        <input class="contact_name_footer" type="name" id="name" name="name" required
+                            placeholder=" Name">
+                        <input class="contact_name_footer" type="email" id="email" name="email" required
+                            placeholder=" E-mail">
+                    </div>
+                    <textarea class="contact_name_footer" id="textareaFooter" name="message" required
+                        placeholder=" Message"></textarea><br>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/docs/OpenFolder/thankYou.html">
+                    <input type="hidden" name="_template" value="table">
+
+                    <div class="btn_send">
+                        <button>
+                            <span></span>
+                            Send
+                            <span></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="container">
+                <div class="footerRow">
+                    <div class="footerLinks">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li><a href="/Home/index.html">Home</a></li>
+                            <li><a href="javascript:history.back()">Aircraft</a></li>
+                            <li><a href="/AboutUs/aboutUs.html">About us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="comingSoonLinks">
+                        <h4>Coming soon</h4>
+                        <ul>
+                            <li>arsenal of weapons</li>
+                            <li>Ships Nation</li>
+                        </ul>
+                    </div>
+
+                    <div class="footerLinks">
+                        <h4>API's</h4>
+                        <ul>
+                            <li><a href="https://aircraft-nation.onrender.com/info.html" target="_blank">Aircraft
+                                    Nation</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footerLinks">
+                        <h4>Social media</h4>
+                        <div class="socialLink">
+                            <a href="https://www.facebook.com/living3drawing/" target="_blank"><i
+                                    class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/j3d_ez/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                            <a href="https://www.linkedin.com/in/joel-fr-l%C3%B3pez-m%C3%A9ndez-4b69ab234/"
+                                target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
