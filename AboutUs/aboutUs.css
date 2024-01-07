@@ -1,11 +1,15 @@
 body {
-    background-image: url(./image/backgroundcontact.jpg);
+    background-image: url(./image/backgroundContact.jpg);
     background-size: cover;
 }
 
 /* https://cssgradient.io/ */
 header {
-    background: linear-gradient(180deg, rgba(0, 11, 46, 1) 81%, #EB9D00 100%);
+    background: linear-gradient(180deg, #000b2e 81%, #eb9d00 100%);
+}
+
+#activePage::after {
+    background: #eb9d00;
 }
 
 /* BOX CONTAINER */
@@ -85,4 +89,43 @@ header {
 
 .footer {
     margin-top: 200px;
+}
+
+/* FOOTER */
+.footerLinks ul li a:hover {
+    border-bottom: 2px solid #eb9d00;
+}
+
+.comingSoonLinks h4 {
+    border-bottom: 4px solid #eb9d00;
+}
+
+.footerLinks h4 {
+    border-bottom: 4px solid #eb9d00;
+}
+
+.footerLinks ul li a:hover {
+    border-bottom: 2px solid #eb9d00;
+}
+
+.socialLink a:hover {
+    background: #eb9d00;
+}
+
+.activePage::after {
+    width: 28%;
+    background: #eb9d00;
+}
+
+.activePage:hover {
+    width: 0%;
+    background: #eb9d00;
+}
+
+
+@media(max-width:720px) {
+
+    .activePage::after {
+        width: 12%;
+    }
 }

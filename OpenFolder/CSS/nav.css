@@ -38,6 +38,15 @@ input {
     color: #fff;
 }
 
+#activePage::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(135deg, transparent 25%, #00258d 50%, #00258d 50%, transparent 50%, transparent 75%, #00258d 75%);
+    ;
+}
+
 #nav_name {
     color: #fff;
 }
@@ -107,11 +116,6 @@ form .group_input img {
     font-size: 20px;
     padding: 0px 5px;
     color: #fff;
-    background: #8300ea;
-
-    font-family: "gill-sans-nova-extra-condens", sans-serif;
-    font-weight: 700;
-    font-style: normal;
 }
 
 /* ABOUT US PAGE --- SEND BUTTON */
@@ -133,12 +137,19 @@ button {
 
     overflow: hidden;
 
-    font-family: "gill-sans-nova", sans-serif;
+    font-family: "gill-sans-nova-extra-condens", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
 }
 
 /* Read more button */
 button h3 {
     font-size: 15px;
+
+    font-family: "gill-sans-nova-extra-condens", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 button>span {

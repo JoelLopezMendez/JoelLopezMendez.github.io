@@ -1,6 +1,10 @@
 /* https://cssgradient.io/ */
 header {
-    background: linear-gradient(180deg, rgba(0, 11, 46, 1) 81%, rgba(219, 235, 0, 1) 100%);
+    background: linear-gradient(180deg, #000b2e 81%, #dbeb00 100%);
+}
+
+#activePage::after {
+    background: #dbeb00;
 }
 
 .containerMain {
@@ -21,7 +25,7 @@ header {
     font-family: "gill-sans-nova-extra-condens", sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: white;
+    color: #fff;
     text-align: center;
 }
 
@@ -46,7 +50,7 @@ header {
 .filterType {
     font-family: "gill-sans-nova", sans-serif;
 
-    color: white;
+    color: #fff;
     margin: 10px 2px;
     padding: 2px 10px;
     border: 1.3px solid #8300ae;
@@ -77,7 +81,7 @@ label {
     align-items: center;
     margin-top: 10px;
     font-family: "gill-sans-nova", sans-serif;
-    color: white;
+    color: #fff;
 }
 
 label:hover {
@@ -113,7 +117,7 @@ label input {
 
 .categories::-webkit-scrollbar-track {
     margin-top: 20px;
-    border: 2px solid rgba(130, 0, 174, 0.3);
+    border: 2px solid #8200ae4d;
 }
 
 /* CONTAINER AIRCRAFTS */
@@ -141,7 +145,7 @@ label input {
 
 #aircraftContainer::-webkit-scrollbar-track {
     margin-top: 90px;
-    border: 2px solid rgba(130, 0, 174, 0.3);
+    border: 2px solid #8200ae4d;
 }
 
 .content {
@@ -159,7 +163,7 @@ label input {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    color: white;
+    color: #fff;
 }
 
 .card {
@@ -167,7 +171,47 @@ label input {
     margin-bottom: 0px;
 }
 
+/* FOOTER */
+
 #textareaFooter {
     min-width: 300px;
     max-width: 300px;
+}
+
+.footerLinks ul li a:hover {
+    border-bottom: 2px solid #dbeb00;
+}
+
+.comingSoonLinks h4 {
+    border-bottom: 4px solid #dbeb00;
+}
+
+.footerLinks h4 {
+    border-bottom: 4px solid #dbeb00;
+}
+
+.footerLinks ul li a:hover {
+    border-bottom: 2px solid #dbeb00;
+}
+
+.socialLink a:hover {
+    background: #dbeb00;
+}
+
+.activePage::after {
+    width: 22%;
+    background: #dbeb00;
+}
+
+.activePage:hover {
+    width: 0%;
+    background: #eb9d00;
+}
+
+
+@media(max-width:720px) {
+
+    .activePage::after {
+        width: 10%;
+    }
 }

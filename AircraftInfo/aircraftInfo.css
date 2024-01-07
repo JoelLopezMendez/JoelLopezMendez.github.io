@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(180deg, rgba(0, 11, 46, 1) 81%, rgba(219, 235, 0, 1) 100%);
+}
+
+.containerInfo {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    padding: 20px 0px 20px 0px;
+    color: rgb(0, 0, 0, 0%);
+    -webkit-text-stroke: 1.3px rebeccapurple;
+    font-size: 40px;
+
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.categories {
+    width: 580px;
+    padding-left: 30px;
+    color: white;
+    margin-bottom: 40px;
+
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.aircraftCategorie {
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-left: 3px;
+    color: #8300EA;
+    font-size: 15px;
+    display: inline;
+}
+
+.description {
+    width: 580px;
+    padding-left: 10px;
+    color: white;
+
+    font-family: "gill-sans-nova", sans-serif;
+}
+
+.footer {
+    margin-top: 100px;
+}
